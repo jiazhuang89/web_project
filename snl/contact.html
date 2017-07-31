@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>神农卤</title>
+<meta name="description" content="神农卤">
+<meta name="Keywords" content="神农卤"/>
+<link rel="stylesheet" type="text/css" href="/css/swiper-3.4.0.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/css/snl.css"/>
+</head>
+<body>
+<!--头部-->
+<header>
+	<div class="container">
+        <a href="/"><img class="logo" src="/img/logo.jpg" alt=""/></a>
+        <ul>
+            <li>
+            	<p><a href="/about.html">关于我们</a></p>
+                <a href="/about.html"><img src="/img/nav1.png" alt=""/></a>
+            </li>
+            <li>
+            	<p><a href="/product.html">美食广场</a></p>
+                <a href="/product.html"><img src="/img/nav2.png" alt=""/></a>
+            </li>
+            <li>
+            	<p><a href="/adv.html">品牌优势</a></p>
+                <a href="/adv.html"><img src="/img/nav3.png" alt=""/></a>
+            </li>
+            <li>
+            	<p><a href="/join.html">如何合作</a></p>
+                <a href="/join.html"><img src="/img/nav4.png" alt=""/></a>
+            </li>
+            <li>
+            	<p><a href="/shop.html">店型展示</a></p>
+                <a href="/shop.html"><img src="/img/nav5.png" alt=""/></a>
+            </li>
+            <li>
+            	<p><a href="/news.html">新闻动态</a></p>
+                <a href="/news.html"><img src="/img/nav6.png" alt=""/></a>
+            </li>
+            <li class="current">
+            	<p><a href="/contact.html">联系我们</a></p>
+                <a href="/contact.html"><img src="/img/nav7.png" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--联系我们-->
+<div class="mid_banner">
+	<div class="box">
+        <img src="/img/contact.jpg" alt=""/>
+    </div>
+</div>
+<div class="container contact">
+	<div class="middle_tittle">
+    <div class="nav_box clear">
+        <ul class="nav left">
+            <li class="current"><p>联系我们</p></li>
+        </ul>
+        <img class="vi3 right" src="/img/vi3.png" alt=""/>
+    </div>
+        <h2 class="st">我<span>｜</span>要<span>｜</span>加<span>｜</span>盟</h2>
+        <img class="tittle_contact" src="/img/contact_02.png" alt=""/>
+        <p class="st bold"><b><span>尊敬的客户：</span>您好！感谢您的支持，您希望进一步了解、加盟神农卤，<br>或有任何疑问和建议，您可以在下方留言板留言，我们将会在第一时间回复您！</b></p>
+    </div>
+    <form id='Fform' action="/index.php/contcat/feedback" method="post">
+        <input type="text" id="name" value="" placeholder="您的姓名"/>
+        <input type="text" name="tel" id="phone" value="" placeholder="您的电话"/>
+        <input type="text"  id="email" name="email" placeholder="您的邮箱/QQ/微信"/>
+        <textarea type="text" placeholder="您的留言"></textarea>
+        <div class="sub"><input type="submit" class="submit" value="" name="submit"/></div>
+    </form>
+
+
+</div>
+
+<!--底部-->
+<footer>
+	<p>神农卤-卤味加盟\加盟热线：400-000-0000 公司地址：广州市白云区均禾大道138号德州国际B幢5楼</p>
+    <p>广州市锦瑟餐饮管理服务有限公司</p>
+    <p>备案号</p>
+    <img src="/img/code.jpg" alt=""/>
+</footer>
+<script type="text/javascript" src="/js/jquery.js" ></script>
+<script type="text/javascript" src="/js/wow.min.js" ></script>
+<script type="text/javascript" src="/js/swiper-3.4.0.jquery.min.js" ></script>
+<!--留言板对接后台-->
+<script>
+$(document).ready(function(){
+     $('footer').off('click', '.submit').on('click', '.submit', function() {
+            var $this = $(this);
+          $('footer').find('#Fform').ajaxSubmit({
+                beforeSubmit: function () {
+                    $this.attr('disabled', 'disabled');
+                    return true;
+                },
+                dataType: 'json',
+                success: function (data) {
+                    alert(data['message'] || '失败');
+                    $this.removeAttr('disabled');
+                },
+                error: function() {
+                    $this.removeAttr('disabled');
+                }
+            });
+        });
+  });
+</script>
+</body>
+</html>

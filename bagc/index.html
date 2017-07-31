@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn" class="no-skrollr">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>彼岸果茶</title>
+	<meta name="description" content="彼岸果茶">
+	<meta name="Keywords" content="彼岸果茶"/>
+	<link rel="stylesheet" type="text/css" href="/css/swiper-3.4.0.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/bagc.css"/>
+    <script type="text/javascript" src="/js/skrollr.min.js" ></script>
+    <script type="text/javascript" src="/js/jquery.js" ></script>
+</head>
+<body>
+  <!-- 导航条 -->
+  <header class="header">
+	  <!-- 导航条    -->
+	  <div class="nav wrap">
+		  <a href="/" class="active" target="_parent">首页</a>
+		  <a href="/about.html" target="_parent" >品牌</a>
+		  <a href="/project.html" target="_parent">项目</a>
+		  <a href="/products.html" target="_parent">产品</a>
+		  <a href="/" target="_parent" class="logoLink"><img src="/img/logo.png"></a>
+		  <a href="/join.html" target="_parent">合作</a>
+		  <a href="/vi.html" target="_parent">VIS</a>
+		  <a href="/news.html" target="_parent">新闻</a>
+		  <a href="/contact.html" target="_parent">留言</a>
+	  </div>
+  </header>
+  <!-- 焦点图切换 -->
+  <div class="banner-swiper wrap">
+      <div class="slider">
+          <div id="slider1_container">
+              <!-- Slides Container -->
+              <div u="slides" class="slides" >
+                  <div><a href="javascript:;"><img u="image" src="/img/banner1.jpg" /></a></div>
+                  <div><a href="javascript:;"><img u="image" src="/img/banner2.jpg" /></a></div>
+                  <div><a href="javascript:;"><img u="image" src="/img/banner3.jpg" /></a></div>
+                  <div><a href="javascript:;"><img u="image" src="/img/banner4.jpg" /></a></div>
+              </div>
+              <!-- Add Pagination -->
+              <div data-u="navigator" class="slidetip">
+                  <div data-u="prototype"></div>
+              </div>
+              <!--鼠标效果-->
+              <p class="scroll">
+                  <i class="ico-mouse"></i>
+              </p>
+
+          </div>
+          <script src="/js/jssor.slider.js"></script>
+          <script>
+              jQuery(document).ready(function ($) {
+                  var _SlideshowTransitions = [
+                      {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2},
+                      {$Duration:1000,y:4,$Zoom:11,$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Opacity:2},
+                      {$Duration:1200,y:1,$Rows:2,$Zoom:1,$ChessMode:{$Row:15},$Easing:{$Top:$JssorEasing$.$EaseInCubic,$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear},$Assembly:2049,$Opacity:2},
+                      {$Duration:1500,x:-1,y:0.5,$Delay:60,$Cols:8,$Rows:4,$Formation:$JssorSlideshowFormations$.$FormationSquare,$Easing:{$Left:$JssorEasing$.$EaseSwing,$Top:$JssorEasing$.$EaseInWave},$Assembly:260,$Round:{$Top:1.5}},
+                      {$Duration:600,x:-1,y:-1,$Delay:50,$Cols:8,$Rows:4,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationZigZag,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Top:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad},$Assembly:1028,$Opacity:2},
+                      {$Duration:1000,x:-0.5,y:0.5,$Zoom:1,$Rotate:1,$SlideOut:true,$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Top:$JssorEasing$.$EaseInCubic,$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseLinear,$Rotate:$JssorEasing$.$EaseInCubic},$Opacity:2,$Round:{$Rotate:0.5}},
+                      {$Duration:1800,x:1,y:0.2,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$Reverse:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInOutSine,$Top:$JssorEasing$.$EaseOutWave,$Clip:$JssorEasing$.$EaseInOutQuad},$Assembly:2050,$Round:{$Top:1.3}},
+                      {$Duration:1800,x:1,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInOutExpo,$Clip:$JssorEasing$.$EaseInOutQuad},$Assembly:260,$Outside:true,$Round:{$Top:0.8}},
+                      {$Duration:1800,x:1,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInOutExpo,$Clip:$JssorEasing$.$EaseInOutQuad},$Assembly:260,$Outside:true,$Round:{$Top:0.8}},
+                      {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.1,0.9],$Top:[0.1,0.9]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationSwirl,$Easing:{$Left:$JssorEasing$.$EaseInJump,$Top:$JssorEasing$.$EaseInJump,$Clip:$JssorEasing$.$EaseOutQuad},$Assembly:260,$Outside:true,$Round:{$Left:0.8,$Top:2.5}},
+                      {$Duration:1200,x:2,y:1,$Cols:2,$Zoom:11,$Rotate:1,$ChessMode:{$Column:15},$Easing:{$Left:$JssorEasing$.$EaseInCubic,$Top:$JssorEasing$.$EaseInCubic,$Zoom:$JssorEasing$.$EaseInCubic,$Opacity:$JssorEasing$.$EaseOutQuad,$Rotate:$JssorEasing$.$EaseInCubic},$Assembly:2049,$Opacity:2,$Round:{$Rotate:0.7}},
+                      {$Duration:1000,$Rows:6,$Clip:4,$Move:true},
+                      {$Duration:800,$Delay:150,$Cols:10,$Clip:1,$Move:true,$Formation:$JssorSlideshowFormations$.$FormationCircle,$Easing:$JssorEasing$.$EaseInBounce,$Assembly:264},
+                      {$Duration:600,x:-1,y:1,$Delay:30,$Cols:8,$Rows:4,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Easing:{$Left:$JssorEasing$.$EaseInQuart,$Top:$JssorEasing$.$EaseInQuart,$Opacity:$JssorEasing$.$EaseLinear},$Opacity:2}
+                  ];
+                  var options = {
+                      $AutoPlay: true,
+                      $SlideshowOptions: {
+                          $Class: $JssorSlideshowRunner$,
+                          $Transitions: _SlideshowTransitions,
+                          $TransitionsOrder: 1,
+                          $ShowLink: true
+                      },
+                      $ArrowNavigatorOptions: {
+                          $Class: $JssorArrowNavigator$
+                      },
+                      $BulletNavigatorOptions: {
+                          $Class: $JssorBulletNavigator$
+                      }
+                  };
+                  var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+              });
+          </script>
+      </div>
+  </div>
+  <!-- 主内容 -->
+  <div class="container wrap">
+	  <div class="home-food clear">
+		  <div class="home-food-title">
+			  <h2>STAR PRODUCTS</h2>
+			  <p>彼岸果茶<i></i>明星产品</p>
+		  </div>
+		  <div class="food-series">
+			  <div><img src="/img/xianguo.png" alt=""><p>时令鲜果</p></div>
+			  <div><img src="/img/mingcha.png" alt=""><p>名山名茶</p></div>
+			  <div><img src="/img/muchang.png" alt=""><p>天然牧场</p></div>
+			  <div><img src="/img/quanshui.png" alt=""><p>活泉净水</p></div>
+		  </div>
+	  </div>
+      <!--产品切换 -->
+	  <div class="pro_area clear">
+		  <div class="pro_nav_box">
+			  <div class="pro_nav">
+				  <div class="pro_nav_btn pro_nav_btn_active"> <i></i> </div>
+				  <div class="pro_nav_btn"> <i></i> </div>
+				  <div class="pro_nav_btn"> <i></i> </div>
+			  </div>
+			  <div class="pro_nav_img">
+				  <img src="/img/yezi.png" alt="">
+			  </div>
+			  <div class="more pro-more"><a href="/products.html">了解详情<i></i></a></div>
+		  </div>
+		  <div class="home-pro-swiper wrap">
+			  <div class="swiper-wrapper">
+				  <div class="swiper-slide">
+					  <div class="home_pro_box clear">
+						  <div class="home_products home_pro1">
+							  <div class="img_pro1"><img src="/img/home-pro1.jpg"/></div>
+							  <h3>芒果金萱茶</h3>
+							  <p>芒果的香味，空气都会浮动的欢喜，五月里刚诞生，金萱微微的奶香，不动声色的俏皮。</p>
+                              <div class="food_pop">
+                                  <h1>芒果金萱茶</h1>
+                                  <span>芒果的香味<br>空气都会浮动的欢喜<br>五月里刚诞生<br>金萱微微的奶香<br>不动声色的俏皮</span>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2">
+							  <div class="img_pro2"><img src="/img/home-pro2.jpg"/></div>
+							  <h3>超级水果绿妍</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>超级水果绿妍</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3">
+							  <div class="img_pro3"><img src="/img/home-pro3.jpg"/></div>
+							  <h3>草莓锤锤</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>草莓锤锤</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3 bor_none">
+							  <div class="img_pro3"><img src="/img/home-pro4.jpg"/></div>
+							  <h3>抹茶星球</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>抹茶星球</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2 bor_none dw">
+							  <div class="img_pro2"><img src="/img/home-pro5.jpg"/></div>
+							  <h3>满杯橙子</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>满杯橙子</h1>
+                              </div>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="swiper-slide">
+					  <div class="home_pro_box clear">
+						  <div class="home_products home_pro1">
+							  <div class="img_pro1"><img src="/img/home-pro6.jpg"/></div>
+							  <h3>西柚粒粒果茶</h3>
+							  <p>红与黄的碰撞，这一季的流行配色，西柚的甜与酸，红茶的纯与甘, 是少女不能说的小秘密。</p>
+                              <div class="food_pop">
+                                  <h1>西柚粒粒果茶</h1>
+                                  <span>红与黄的碰撞<br>这一季的流行配色<br>西柚的甜与酸<br>红茶的纯与甘<br>是少女不能说的小秘密</span>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2">
+							  <div class="img_pro2"><img src="/img/home-pro7.jpg"/></div>
+							  <h3>荔趣泡泡果茶</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>荔趣泡泡果茶</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3">
+							  <div class="img_pro3"><img src="/img/home-pro8.jpg"/></div>
+							  <h3>爆果肉榴莲王</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>爆果肉榴莲王</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3 bor_none">
+							  <div class="img_pro3"><img src="/img/home-pro9.jpg"/></div>
+							  <h3>金枕榴莲凤梨</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>金枕榴莲凤梨</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2 bor_none dw">
+							  <div class="img_pro2"><img src="/img/home-pro10.jpg"/></div>
+							  <h3>超级水果茶</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>超级水果茶</h1>
+                              </div>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="swiper-slide">
+					  <div class="home_pro_box  clear">
+						  <div class="home_products home_pro1">
+							  <div class="img_pro1"><img src="/img/home-pro11.jpg"/></div>
+							  <h3>青桔香柠果茶</h3>
+							  <p>青桔的翠色，精巧灵动视觉热恋，柠檬明亮的色泽，隐藏在绿茶滋味下，一抹初恋的微酸。</p>
+                              <div class="food_pop">
+                                  <h1>青桔香柠果茶</h1>
+                                  <span>青桔的翠色<br>精巧灵动视觉热恋<br>柠檬明亮的色泽<br>隐藏在绿茶滋味下<br>一抹初恋的微酸</span>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2">
+							  <div class="img_pro2"><img src="/img/home-pro12.jpg"/></div>
+							  <h3>超级水果玉露</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>超级水果玉露</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3">
+							  <div class="img_pro3"><img src="/img/home-pro13.jpg"/></div>
+							  <h3>栗子泥黑芝麻慕斯</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>栗子泥黑芝麻慕斯</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro3 bor_none">
+							  <div class="img_pro3"><img src="/img/home-pro14.jpg"/></div>
+							  <h3>经典美式</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>经典美式</h1>
+                              </div>
+						  </div>
+						  <div class="home_products home_pro2 bor_none dw">
+							  <div class="img_pro2"><img src="/img/home-pro15.jpg"/></div>
+							  <h3>琥珀珍珠奶茶</h3>
+                              <div class="food_pop food_pop_litle">
+                                  <h1>琥珀珍珠奶茶</h1>
+                              </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="home-pro-btm-pic"><img src="/img/home-pro-btm-pic.jpg" alt=""></div>
+  </div>
+  <div class="home-vis wrap">
+	  <div class="vis-letter wrap">
+		  <p><i>清新</i></p>
+		  <p><i>文艺</i></p>
+		  <p><i>简约</i></p>
+		  <p><i>独特</i></p>
+	  </div>
+	  <div class="vi-more"><a href="/vi.html">了解<br>详情</a><i></i></div>
+  </div>
+
+  <div class="container wrap">
+      <div class="rq-area">
+		  <div class="rw-title">
+			  <h1>人气果茶，人手一杯</h1>
+			  <h5>虏获舌尖，抢占视觉</h5>
+		  </div>
+		  <div class="rq-img clear">
+			   <img class="rq-img1" data-start="top:1000px;" data-end="top:220px;" src="/img/rq-img1.jpg" />
+			   <img class="rq-img2 " data-start="top:-200px;" data-end="top:400px;" src="/img/rq-img2.jpg" />
+			   <img class="rq-img3 " data-start="top:1000px;" data-end="top:200px;" src="/img/rq-img3.jpg" />
+			   <img class="rq-img4 " data-start="top:-350px;" data-end="top:520px;" src="/img/rq-img4.jpg" />
+			   <div class="fix-word">
+				   <img src="/img/Realm-Fruit-Tea.png"  />
+			   </div>
+		  </div>
+	  </div>
+    <!--首页新闻中心-->
+	  <div class="news-area clear">
+		  <div class="news-audio"><img src="/img/home-news-img.jpg" alt=""></div>
+		  <div class="new-container">
+
+	 <!--首页新闻中心内容	  -->
+			  <div class="news-title clear">
+				  <h1>NEWS</h1>
+				  <span>新闻日常</span>
+			  </div>
+
+			  <div class="news-scroll" id="box">
+				  <ul class="news-list" id="content">
+					  <li class="news-item">
+						  <i class="i-up">
+							  <i class="i-up-l"></i>
+							  <i class="i-up-r"></i>
+						  </i>
+						  <a href="/news.html">2017年，彼岸果茶已在全国开设30家加盟店
+							  <span>时间：2017-4-12</span></a>
+					  </li>
+					  <li class="news-item">
+						  <i class="i-up">
+							  <i class="i-up-l"></i>
+							  <i class="i-up-r"></i>
+						  </i>
+						  <a href="/news.html">2017年，彼岸果茶已在全国开设30家加盟店
+							  <span>时间：2017-4-12</span></a>
+					  </li>
+					  <li class="news-item">
+						  <i class="i-up">
+							  <i class="i-up-l"></i>
+							  <i class="i-up-r"></i>
+						  </i>
+						  <a href="/news.html">2017年，彼岸果茶已在全国开设30家加盟店
+							  <span>时间：2017-4-12</span></a>
+					  </li>
+					  <li class="news-item">
+						  <i class="i-up">
+							  <i class="i-up-l"></i>
+							  <i class="i-up-r"></i>
+						  </i>
+						  <a href="/news.html">2017年，彼岸果茶已在全国开设30家加盟店
+							  <span>时间：2017-4-12</span></a>
+					  </li>
+					  <li class="news-item">
+						  <i class="i-up">
+							  <i class="i-up-l"></i>
+							  <i class="i-up-r"></i>
+						  </i>
+						  <a href="/news.html">2017年，彼岸果茶已在全国开设30家加盟店
+							  <span>时间：2017-4-12</span></a>
+					  </li>
+				  </ul>
+				  <ul class="news-list-clone" id="content1"></ul>
+			  </div>
+		  </div>
+		  <div class="more"><a href="/news.html">了解详情<i></i></a></div>
+	  </div>
+  </div>
+
+<!-- 底部 -->
+  <footer class="footer wrap">
+      <div class="container clear">
+          <div class="footer_left">
+              <h2>广州市锦瑟餐饮管理服务有限公司</h2>
+              <p>地址：广州市白云区均禾大道自编2号嘉达科创中心6楼</p>
+              <p class="p_type2">江苏省南京市江宁区水长街8号1幢4楼</p>
+              <p>电话：020-22096051</p>
+          </div>
+          <div class="footer_right clear">
+              <div class="footer_logo"><img src="/img/footer_logo.jpg"/></div>
+              <div class="footer_code"><img src="/img/code.jpg"/>进入手机官网</div>
+              <div class="lx">
+                  <p>全国加盟免费热线</p>
+                  <p class="bold">400-901-5008</p>
+                  <a href="http://tb.53kf.com/code/client/10158991/2" target="_blank" rel="nofollow">点击联系客服</a>
+              </div>
+          </div>
+
+      </div>
+  </footer>
+
+<script type="text/javascript" src="/js/wow.min.js" ></script>
+<script type="text/javascript" src="/js/swiper-3.4.0.jquery.min.js" ></script>
+<script>
+	    new WOW().init();
+</script> 
+ <script>
+	   // news scroll   	
+	var aArea = $('#box')[0];
+	var content = $('#content')[0];
+	var content1 = $('#content1')[0];
+		content1.innerHTML = content.innerHTML;	
+		var speed =50;
+		function scrollup() {
+			if(aArea.scrollTop >= content.offsetHeight) {
+				aArea.scrollTop = 0;
+			} else {
+				aArea.scrollTop++;
+			}
+		}
+		var myScroll = setInterval(scrollup, speed);
+		aArea.onmouseover = function() {
+			clearInterval(myScroll);
+		};
+		aArea.onmouseout = function() {
+			myScroll = setInterval(scrollup, speed);
+		};
+</script>
+<script>
+	$('.vis-letter p').mouseenter(function(){
+		$(this).find('i').animate({marginTop:'-65px',opacity:'0'},200,function(){
+			$(this).css({marginTop:'65px'});
+			$(this).animate({marginTop:'6px',opacity:'.8'},150);
+		});
+	});
+</script>
+<script>
+      $(function () {
+        var mySwiper = new Swiper('.home-pro-swiper', {
+            autoplay: 6000,
+			effect:'fade',
+            onSlideChangeEnd: function (swiper) {
+                var j=mySwiper.activeIndex;
+                $('.pro_nav_btn').removeClass('pro_nav_btn_active').eq(j).addClass('pro_nav_btn_active');
+            }
+        });
+        /*列表切换*/
+        $('.pro_nav_btn').on('click', function (e) {
+            e.preventDefault();
+            //得到当前索引
+            var i=$(this).index();
+            $('.pro_nav_btn').removeClass('pro_nav_btn_active').eq(i).addClass('pro_nav_btn_active');
+            mySwiper.slideTo(i,500,false);
+        });
+    });
+</script>
+  <script type="text/javascript">
+      var s = skrollr.init({
+          //edgeStrategy: 'set',
+          easing: {
+              WTF: Math.random,
+              inverted: function(p) {
+                  return 1-p;
+              }
+          }
+      });
+  </script>
+
+</body>
+</html>

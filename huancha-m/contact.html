@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>欢茶</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/hc.css" />
+</head>
+<body>
+<header>
+    <div class="header clear">		
+        <div class="logo"><img src="images/logo.jpg"/></div>
+        <!--导航按钮-->
+        <div id="nav">
+          <img src="images/nav.png" alt="导航" />
+        </div>
+        <!--mask-->
+        <div id="menu-pop" class="pop" style="display:none;"></div>
+        <!--sub-menu	弹出的菜单-->
+        <div id="menu-nav" class="hide">
+            <img class="sidebar-logo" src="images/logo2.jpg" alt="">
+            <ul class="list">
+                <li>
+                    <a href="index.html">品牌首页</a>
+                </li>            
+                <li>
+                    <a href="about.html">走进品牌</a>
+                </li>            
+                <li>
+                    <a href="adv.html">品牌优势</a>
+                </li>            
+                <li>
+                    <a href="investment.html">投资攻略</a>
+                </li>            
+                <li>
+                    <a href="food.html">美食会场</a>
+                </li>            
+                <li>
+                    <a href="shop.html">终端店铺</a>
+                </li>            
+                <li>
+                    <a href="news.html">新闻中心</a>
+                </li>            
+                <li>
+                    <a href="contact.html">联系我们</a>
+                </li>            
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="banner">
+         <img src="images/banner1.jpg" alt="" />
+    </div>    
+
+
+
+</div>
+
+
+<div class="copyright">广州市稻上餐饮管理服务有限公司<br>地址：广州市白云区嘉禾街均禾大道自编136-138号501房</div>
+
+
+<script type="text/javascript" src="js/flexible.js" ></script>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js" ></script>
+
+
+<!--导航-->
+<script>
+$(document).ready(function() {
+	//  侧边栏按钮操作侧边栏出现
+	$('#nav').click(function() {
+		$('#menu-pop').show();
+		$('#menu-nav').addClass('animated bounceInLeft').show();
+	});
+	//  侧边栏按钮操作侧边栏隐藏
+	$('#menu-pop').click(function() {
+		$('#menu-pop').hide();
+		$('#menu-nav').removeClass('animated bounceInLeft').hide();
+	});
+});	
+</script>
+</body>
+</html>

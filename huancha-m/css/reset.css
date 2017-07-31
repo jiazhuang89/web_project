@@ -1,0 +1,220 @@
+/*reset*/
+@charset "utf-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+legend,
+button,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 10rem;
+	font-size: 0.21875rem;
+	color: #000;
+	background: #f2f2f2;
+	font-family: "Microsoft YaHei", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "微软雅黑";
+}
+
+q::before,
+q::after {
+	content: "";
+}
+
+fieldset,
+img,
+abbr {
+	border: 0 none;
+}
+
+abbr {
+	font-variant: normal;
+}
+
+legend {
+	color: #000;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+input,
+img,
+select {
+	vertical-align: middle;
+}
+
+img{
+	width:100%;
+	max-width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+del,
+ins,
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #666;
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #390;
+	text-decoration: none;
+}
+
+input[type="submit"],
+input[type="button"] {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+button {
+	cursor: pointer;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+i {
+	font-style: normal;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+.clear::after {
+	content: '\200B';
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.abs {
+	position: absolute;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	height: 100%;
+    width: 10rem;
+	-webkit-overflow-scrolling: touch;
+  	overflow-scrolling: touch;
+  	overflow-x:hidden;
+}

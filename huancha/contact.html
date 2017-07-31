@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<title>欢茶</title>
+	<meta name="description" content="欢茶">
+	<meta name="Keywords" content="欢茶"/>
+	<link rel="stylesheet" type="text/css" href="/css/swiper-3.4.0.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/hcpc.css"/>
+</head>
+<body>
+<!-- 导航条 -->
+<header class="header">
+	<ul class="nav wrap clear">
+		<li><a href="/"><p>首页</p><span>HOME</span></a></li>
+		<li><a href="/about.html"><p>走进品牌</p><span>BRAND INTRODUCTION</span></a></li>
+		<li><a href="/adv.html"><p>品牌优势</p><span>BRAND ADVANTAGES</span></a></li>
+		<li><a href="/join.html"><p>投资运营</p><span>INVESTMENT OPERATION</span></a></li>
+		<li class="logo"><img src="/img/logo.png"></li>
+		<li><a href="/food.html"><p>美食会场</p><span>FOOD CENTER</span></a></li>
+		<li><a href="/shop.html"><p>终端店型</p><span>SHOP DISPLAY</span></a></li>
+		<li><a href="/news.html"><p>新闻中心</p><span>NEWS</span></a></li>
+		<li class="nav_active"><a href="/contact.html"><p>联系我们</p><span>CONTACT US</span></a></li>
+	</ul>
+</header>
+
+<!-- 焦点图切换 -->
+<div class="swiper-container banner wrap">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="/img/banner1.jpg" alt="" /> </div>
+		<div class="swiper-slide"><img src="/img/banner2.jpg" alt="" /> </div>
+		<div class="swiper-slide"><img src="/img/banner3.jpg" alt="" /> </div>
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+</div>
+<!-- 留言区域 -->
+<div class="contianer">
+	<!--联系我们-->
+	<div class="contact_us clear">
+		<div class="map">
+			<div style="width:592px;height:376px;" id="dituContent"></div>
+		</div>
+		<div class="con_info">
+			<div class="tittle">联系我们</div>
+			<h2>广州市稻上餐饮管理服务有限公司</h2>
+			<p>热线：020-2819-0110<a href="#">点击联系客服</a></p>
+			<p>地址：广州市白云区嘉禾街均禾大道自编136-138号501房</p>
+		</div>
+	</div>
+	<div class="mes_board">
+		<form  id="Fform2" action="/index.php/contcat/feedback" method="post">
+			<p><input type="text" id="contacts" name="contacts"  /></p>
+			<p><input type="text" id="phone" name="phone" /></p>
+			<p class="message"><textarea type="text"></textarea></p>
+			<div class="mes_btn"><input id="submit" type="submit" value=" " /></div>
+		</form>
+	</div>
+</div>
+<!-- 底部 -->
+<footer  class="wrap">
+	<div class="footer_bg clear">
+		<div class="container_z clear">
+			<div class="mes clear">
+				<div class="ly_input left">
+					<p>为了保障您及时收到回复</p>
+					<p>请您务必保持手机畅通，我们将第一时间给您回复</p>
+					<form  id="Fform" action="/index.php/contcat/feedback" method="post">
+						<p><span>姓名：</span><input type="text"  id="contacts" name="contacts" /></p>
+						<p><span>电话：</span><input type="text"  id="phone" name="phone"  /></p>
+						<div class="mes_btn"><input  id="submit" type="submit"  value="确定提交" /></div>
+					</form>
+				</div>
+				<div class="ly_img"><img src="/img/footer_btn.jpg"/></div>
+			</div>
+			<div class="footer_code clear">
+				<div class="phone">
+					<h4>全国加盟咨询电话：</h4>
+					<h5>020-39829999</h5>
+					<a href="http://tb.53kf.com/code/client/10146104/4">点击联系客服</a>
+					<p>了解更多你会爱上欢茶的理由！</p>
+				</div>
+				<div class="code clear">
+					<div class="sj_code">
+						<img src="/img/sj_code.jpg"/>
+						<p>进入手机官网</p>
+					</div>
+					<div class="wx_code">
+						<img src="/img/wx_code.jpg"/>
+						<p>微信二维码</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>广州市稻上餐饮管理服务有限公司</p>
+		<p>地址：广州市白云区嘉禾街均禾大道自编136-138号501房</p>
+	</div>
+</footer>
+<script type="text/javascript" src="/js/jquery.js" ></script>
+<script type="text/javascript" src="/js/jquery.form.js" ></script>
+<script type="text/javascript" src="/js/wow.min.js" ></script>
+<script type="text/javascript" src="/js/swiper-3.4.0.jquery.min.js" ></script>
+<script type="text/javascript" src="/js/index.js" ></script>
+<!--百度地图api-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript">
+	//百度地图
+	//创建和初始化地图函数：
+	function initMap(){
+		createMap();//创建地图
+		setMapEvent();//设置地图事件
+		addMapControl();//向地图添加控件
+	}
+
+	//创建地图函数：
+	function createMap(){
+		var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+		var point = new BMap.Point(113.308715,23.260043);//定义一个中心点坐标
+		map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+		window.map = map;//将map变量存储在全局
+	}
+
+	//地图事件设置函数：
+	function setMapEvent(){
+		map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+		map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+		map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+		map.enableKeyboard();//启用键盘上下左右键移动地图
+	}
+
+	//地图控件添加函数：
+	function addMapControl(){
+		//向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+		map.addControl(ctrl_sca);
+	}
+
+
+	initMap();//创建和初始化地图
+</script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		        loop: 'ture',
+				autoplay: 3500,
+				pagination: '.swiper-pagination',
+				paginationClickable: '.swiper-pagination',
+                effect : 'fade',
+	 	        autoplayDisableOnInteraction: false, 
+			});
+</script>
+<script>
+	    new WOW().init();
+</script> 
+<script>
+      $('#Fform2').ajaxForm({
+        beforeSubmit: function () {
+            return true;
+        },
+        dataType: 'json',
+        success: function (data) {
+            alert(data['message'] || '失败');
+        },
+        error: function() {
+        }
+    });
+
+</script>
+</body>
+</html>

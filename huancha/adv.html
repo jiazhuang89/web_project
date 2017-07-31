@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>欢茶</title>
+    <meta name="description" content="欢茶">
+    <meta name="Keywords" content="欢茶"/>
+    <link rel="stylesheet" type="text/css" href="/css/swiper-3.4.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/hcpc.css"/>
+</head>
+
+<body>
+<!-- 导航条 -->
+<header class="header">
+    <ul class="nav wrap clear">
+        <li><a href="/"><p>首页</p><span>HOME</span></a></li>
+        <li><a href="/about.html"><p>走进品牌</p><span>BRAND INTRODUCTION</span></a></li>
+        <li class="nav_active"><a href="/adv.html"><p>品牌优势</p><span>BRAND ADVANTAGES</span></a></li>
+        <li><a href="/join.html"><p>投资运营</p><span>INVESTMENT OPERATION</span></a></li>
+        <li class="logo"><img src="/img/logo.png"></li>
+        <li><a href="/food.html"><p>美食会场</p><span>FOOD CENTER</span></a></li>
+        <li><a href="/shop.html"><p>终端店型</p><span>SHOP DISPLAY</span></a></li>
+        <li><a href="/news.html"><p>新闻中心</p><span>NEWS</span></a></li>
+        <li><a href="/contact.html"><p>联系我们</p><span>CONTACT US</span></a></li>
+    </ul>
+</header>
+
+<!-- 焦点图切换 -->
+<div class="swiper-container banner wrap">
+    <div class="swiper-wrapper wow fadeInUp">
+        <div class="swiper-slide"><img src="/img/banner1.jpg" alt="" /> </div>
+        <div class="swiper-slide"><img src="/img/banner2.jpg" alt="" /> </div>
+        <div class="swiper-slide"><img src="/img/banner3.jpg" alt="" /> </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<!--品牌优势-->
+<div class="advantages">
+	<div class="subtitle">
+    	<div class="subtitle1">品牌优势</div>
+        <div class="subtitle2">
+			<span>BBRANDED ADVANTAGES</span>
+			<p>观茶入微   玩转茶界   过人茶艺   同行景仰</p>
+        </div>
+        <div class="img_public_01"><img src="/img/public_01.jpg"/></div>
+    </div>
+    <div class="img_advantages_01"><img src="/img/advantages_01.jpg"/></div>
+	<div class="ingredients">
+        <div class="subtittle_b left">食材优势<span>INGREDIENTS</span></div>
+        <ul>
+            <li><img src="/img/advantages_02.jpg"/></li>
+            <li><img src="/img/advantages_03.jpg"/></li>
+            <li><img src="/img/advantages_04.jpg"/></li>
+            <li><img src="/img/advantages_05.jpg"/></li>
+        </ul>
+    </div>
+    <ul class="main_end clear">
+		<li>
+            <div class="subtittle_b">食材优势<span>INGREDIENTS</span></div>
+            <div class="info"><img src="/img/advantages_06.jpg"/></div>
+        </li>    
+		<li>
+            <div class="subtittle_b">技术优势<span>TECHNOLOGY</span></div>
+            <div class="info"><img src="/img/advantages_07.jpg"/></div>
+        </li>    
+    </ul>
+</div>
+<!--底部-->
+<footer  class="wrap">
+    <div class="footer_bg clear">
+        <div class="container_z clear">
+            <div class="mes clear">
+                <div class="ly_input left">
+                    <p>为了保障您及时收到回复</p>
+                    <p>请您务必保持手机畅通，我们将第一时间给您回复</p>
+                    <form  id="Fform" action="/index.php/contcat/feedback" method="post">
+                        <p><span>姓名：</span><input type="text"  id="contacts" name="contacts" /></p>
+                        <p><span>电话：</span><input type="text"  id="phone" name="phone"  /></p>
+                        <div class="mes_btn"><input  id="submit" type="submit"  value="确定提交" /></div>
+                    </form>
+                </div>
+                <div class="ly_img"><img src="/img/footer_btn.jpg"/></div>
+            </div>
+            <div class="footer_code clear">
+                <div class="phone">
+                    <h4>全国加盟咨询电话：</h4>
+                    <h5>020-39829999</h5>
+                    <a href="#">点击联系客服</a>
+                    <p>了解更多你会爱上欢茶的理由！</p>
+                </div>
+                <div class="code clear">
+                    <div class="sj_code">
+                        <img src="/img/sj_code.jpg"/>
+                        <p>进入手机官网</p>
+                    </div>
+                    <div class="wx_code">
+                        <img src="/img/wx_code.jpg"/>
+                        <p>微信二维码</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>广州市稻上餐饮管理服务有限公司</p>
+        <p>地址：广州市白云区嘉禾街均禾大道自编136-138号501房</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="/js/jquery.js" ></script>
+<script type="text/javascript" src="/js/jquery.form.js" ></script>
+<script type="text/javascript" src="/js/wow.min.js" ></script>
+<script type="text/javascript" src="/js/swiper-3.4.0.jquery.min.js" ></script>
+<script type="text/javascript" src="/js/index.js" ></script>
+<!--轮播图-->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		loop: 'ture',
+		autoplay: 3500,
+		pagination: '.swiper-pagination',
+		paginationClickable: '.swiper-pagination',
+		effect : 'fade',
+		autoplayDisableOnInteraction: false
+	});
+</script>
+<script>
+	new WOW().init();
+</script>
+
+</body>
+</html>
