@@ -132,7 +132,23 @@
         effect : 'fade',
 	 	    autoplayDisableOnInteraction: false, 
 			});
+    // 留言提交
+    $(document).ready(function(){
+        $('#Fform').ajaxForm({
+            beforeSubmit: function () {
+                return true;
+            },
+            dataType: 'json',
+            success: function (data) {
+                alert(data['message'] || '失败');
+            },
+            error: function() {
+            }
+        });
+    });
 </script>
+
+
 <!--引用百度地图-->
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dK1mEiOBCu2oQKBBV3VvSYvyvcdfSPx2"></script>
 <script>
